@@ -11,7 +11,7 @@ namespace Soenneker.Reddit.Ads.HttpClients.Tests;
 public sealed class RedditAdsConfigurationTests
 {
     [Test]
-    public async Task Cached_client_preserves_api_path_and_authentication()
+    public async ValueTask Cached_client_preserves_api_path_and_authentication()
     {
         IConfiguration configuration = new ConfigurationBuilder().AddInMemoryCollection(new Dictionary<string, string?>
         {
